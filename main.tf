@@ -15,7 +15,7 @@ provider "aws" {
 
 # S3 Bucket
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "test-sb-demo-bucket-12345"   # <-- change this to a unique name
+  bucket = "test-sb-demo-bucket-12345" # <-- change this to a unique name
 }
 
 # Enable versioning (optional)
@@ -26,4 +26,3 @@ resource "aws_s3_bucket_versioning" "versioning" {
     status = "Enabled"
   }
 }
-
