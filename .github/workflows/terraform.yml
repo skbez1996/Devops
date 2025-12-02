@@ -30,7 +30,7 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: ~> 1.14
+          terraform_version: 1.14.x
 
       - name: Terraform Format Check
         run: terraform fmt -check -recursive
@@ -71,7 +71,7 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: ~> 1.0
+          terraform_version: 1.14.x
 
       - name: Download Terraform Plan
         uses: actions/download-artifact@v4
