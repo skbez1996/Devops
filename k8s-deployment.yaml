@@ -18,7 +18,7 @@ spec:
       - name: webapp
         image: saibezaw/webapp:01613d15bd7bd1fc72f8e4859218ac010045c428
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         resources:
           requests:
             memory: "128Mi"
